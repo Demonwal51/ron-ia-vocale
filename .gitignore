@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+# downloaded or made by the installer, on each player's PC
+modeles/
+dumps/
+tiers/UE4SS/
+tiers/repak/
+manifeste_ue4ss.json
+config.json
+# what happens while playing
+logs/
+pont/
+cerveau/ollama_projet.log

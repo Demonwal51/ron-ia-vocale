@@ -1,0 +1,10 @@
+# What the program needs (Python 3.12, Windows, NVIDIA GPU). Installed by installer.bat into .venv.
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+numpy>=2.0
+sounddevice==0.5.6
+# Whisper on the GPU: CUDA 12 libraries (ia_vocale.py adds their folders at start)
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.*
+# the spoken answers (French and English voices)
+piper-tts==1.5.0
