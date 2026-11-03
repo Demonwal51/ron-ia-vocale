@@ -1,0 +1,3 @@
+# cmd misreads .bat files without CRLF line ends: they are kept byte for byte (a "Download ZIP" gets them as they are)
+*.bat -text
+*.ps1 -text
