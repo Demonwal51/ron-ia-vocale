@@ -2,6 +2,8 @@
 
 *[English below](#english)*
 
+**Page Nexus Mods** : https://www.nexusmods.com/readyornot/mods/9149 · **Discord** : demonwal51
+
 Tu parles au micro, **en français ou en anglais**, et une IA **100 % locale** (sur ta carte graphique, rien ne part
 sur internet) comprend ce que tu dis :
 
@@ -93,30 +95,67 @@ redevient d'origine. Supprime ensuite le dossier du mod.
 
 ## Signaler un problème
 
-Ouvre une « Issue » sur GitHub (ou contacte-moi sur Discord) avec : ce que tu as dit, ce qui s'est passé, et les
+Ouvre une « Issue » sur GitHub, ou écris dans l'onglet Bugs de la page Nexus (ou à demonwal51 sur Discord), avec : ce que tu as dit, ce qui s'est passé, et les
 fichiers `logs\evenements.jsonl` et `pont\WalPont.log` du dossier du mod. Si le jeu a planté : le dossier le plus
 récent de `%LOCALAPPDATA%\ReadyOrNot\Saved\Crashes`.
 
-## Crédits
+## On cherche des voix !
 
-- [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) (licence MIT, fourni dans `tiers/`), le chargeur de mods Lua.
-- [Ollama](https://ollama.com) et le modèle [Qwen3.5](https://huggingface.co/Qwen) (4B) pour comprendre ;
-  [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (Whisper d'OpenAI) pour entendre ;
-  [Piper](https://github.com/OHF-Voice/piper1-gpl) et ses voix `fr_FR-siwis-medium` et `en_US-lessac-medium` pour
-  parler (téléchargées depuis [piper-voices](https://huggingface.co/rhasspy/piper-voices), selon leurs propres
-  licences).
-- Les voix des personnages sont celles du jeu, jouées par le jeu lui-même (rien n'est copié).
+Tu fais du doublage, du théâtre, ou tu as simplement une voix qui en jette ? On cherche des doubleurs et doubleuses,
+en français et en anglais, pour donner une vraie voix aux suspects, aux civils et à l'équipe. Avec ton accord, l'IA
+apprend ta voix à partir de quelques enregistrements, et les personnages parlent ensuite avec elle en jeu. Ta voix
+sert uniquement à ce mod, ton nom est crédité ici, et tu peux te retirer quand tu veux. Intéressé ? Écris-moi sur
+Discord (**demonwal51**) ou en message privé sur Nexus.
+
+## Crédits et outils utilisés
+
+Ce mod tient debout grâce au travail de toutes ces personnes. Merci à elles. Chaque outil garde sa propre licence.
+
+**Le jeu**
+- *Ready or Not*, de VOID Interactive. L'équipe parle avec les voix enregistrées du jeu, et le mod lit les
+  sous-titres depuis ta propre copie : rien du jeu n'est copié dans le mod. Merci aux comédiens qui ont prêté leur voix.
+
+**Pour faire marcher le mod dans le jeu**
+- [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS), par l'équipe UE4SS-RE (créé par Narknon) — MIT, fourni dans `tiers/`.
+- [repak](https://github.com/trumank/repak), par trumank et spuds — MIT / Apache 2.0 — pour lire les sous-titres du jeu.
+
+**Pour comprendre ta voix**
+- [Whisper](https://github.com/openai/whisper), par OpenAI (modèle `large-v3-turbo`) — MIT.
+- La version CTranslate2 de ce modèle, préparée par [Mobius Labs](https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo) — MIT.
+- [faster-whisper](https://github.com/SYSTRAN/faster-whisper), par SYSTRAN (Guillaume Klein) — MIT.
+- [CTranslate2](https://github.com/OpenNMT/CTranslate2), par OpenNMT — MIT.
+- Les bibliothèques CUDA de NVIDIA (cuBLAS, cuDNN), pour la carte graphique — licence NVIDIA.
+- [sounddevice](https://github.com/spatialaudio/python-sounddevice), par Matthias Geier, avec PortAudio — MIT — pour le micro.
+
+**Pour réfléchir**
+- [Qwen3.5 4B](https://github.com/QwenLM), par l'équipe Qwen d'Alibaba Cloud — Apache 2.0.
+- [Ollama](https://ollama.com), qui fait tourner le modèle sur ton PC — MIT.
+
+**Pour répondre à voix haute**
+- [Piper](https://github.com/OHF-Voice/piper1-gpl), créé par Michael Hansen, aujourd'hui entretenu par l'Open Home
+  Foundation — GPL-3.0 (installé par pip, pas fourni dans le dépôt).
+- espeak-ng (GPL-3.0) et ONNX Runtime de Microsoft (MIT), utilisés par Piper.
+- La voix française `fr_FR-siwis-medium`, entraînée sur la base SIWIS de Pierre-Edouard Honnet, Alexandros Lazaridis,
+  Philip N. Garner et Junichi Yamagishi (Université d'Édimbourg et Idiap) — CC BY 4.0.
+- La voix anglaise `en_US-lessac-medium`, entraînée sur les enregistrements de Voice Factory et Lessac Technologies
+  (Blizzard Challenge 2013, Université d'Édimbourg) — usage non commercial.
+- Les deux voix sont téléchargées depuis [piper-voices](https://huggingface.co/rhasspy/piper-voices).
+- [FFmpeg](https://ffmpeg.org/), pour varier le ton des voix, seulement s'il est déjà sur ton PC.
+
+**Et aussi**
+- Python (Python Software Foundation), NumPy, et Hugging Face qui héberge les modèles et les voix.
 - **Fait avec une IA** : le code a été écrit avec Claude (Anthropic), dans Claude Code, sous la direction de
   Demonwal51, et essayé en jeu à chaque étape.
 
-**Open source, licence MIT** (voir `LICENSE`) : tu peux l'utiliser, le modifier et le partager librement. Les
-outils qu'il installe gardent leurs propres licences (UE4SS : MIT ; Piper, installé par pip : GPL-3.0). Ce mod n'est
-pas affilié à VOID Interactive.
+**Open source, licence MIT** (voir `LICENSE`) : tu peux l'utiliser, le modifier et le partager librement en citant
+l'auteur. Mod gratuit, sans but commercial, non affilié à VOID Interactive ni aux auteurs cités.
 
 ---
 
 <a name="english"></a>
 ## English
+
+**Nexus Mods page**: https://www.nexusmods.com/readyornot/mods/9149 · **Discord**: demonwal51
 
 You speak into your microphone, **in English or French**, and a **fully local** AI (on your graphics card, nothing
 goes online) understands you: **your SWAT team** follows your orders ("Follow me", "Hold position", "Search the
@@ -146,10 +185,45 @@ the mod.
 moves; a hostage taking works about half the time; a few crashes on the fast-food map during our tests; tested on
 one PC only; the program's windows are in French.
 
-**Report a problem**: open a GitHub issue with what you said, what happened, and the files `logs\evenements.jsonl`
-and `pont\WalPont.log`.
+**Report a problem**: open a GitHub issue, or post in the Bugs tab of the Nexus page (or message demonwal51 on
+Discord), with what you said, what happened, and the files `logs\evenements.jsonl` and `pont\WalPont.log`.
 
-**Credits**: UE4SS (MIT, included in `tiers/`), Ollama + Qwen3.5 4B, faster-whisper, Piper and its voices. The code
-was written with an AI (Claude by Anthropic, in Claude Code), directed by Demonwal51 and tried in game at each step.
-**Open source, MIT license** (see `LICENSE`); the tools it installs keep their own licenses (UE4SS: MIT; Piper,
-installed by pip: GPL-3.0). Not affiliated with VOID Interactive.
+### We're looking for voices!
+
+Do you do voice acting, theatre, or just have a voice that stands out? We're looking for voice actors and actresses,
+in English and French, to give a real voice to the suspects, the civilians and the team. With your permission, the AI
+learns your voice from a few recordings, and the characters then speak with it in game. Your voice is used only for
+this mod, your name is credited here, and you can step out whenever you want. Interested? Message me on Discord
+(**demonwal51**) or privately on Nexus.
+
+### Credits and tools used
+
+This mod stands on the work of all these people. Thank you. Each tool keeps its own license.
+
+- **The game**: *Ready or Not*, by VOID Interactive. The team speaks with the game's recorded voices, and the mod reads
+  the subtitles from your own copy: nothing from the game is copied into the mod. Thanks to the actors who lent their voices.
+- **Running inside the game**: [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS), by the UE4SS-RE team (created by
+  Narknon) — MIT, included in `tiers/`; [repak](https://github.com/trumank/repak), by trumank and spuds — MIT /
+  Apache 2.0 — to read the game's subtitles.
+- **Understanding your voice**: [Whisper](https://github.com/openai/whisper), by OpenAI (`large-v3-turbo`) — MIT; its
+  CTranslate2 version by [Mobius Labs](https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo) — MIT;
+  [faster-whisper](https://github.com/SYSTRAN/faster-whisper), by SYSTRAN (Guillaume Klein) — MIT;
+  [CTranslate2](https://github.com/OpenNMT/CTranslate2), by OpenNMT — MIT; NVIDIA's CUDA libraries (cuBLAS, cuDNN) —
+  NVIDIA license; [sounddevice](https://github.com/spatialaudio/python-sounddevice), by Matthias Geier, with
+  PortAudio — MIT.
+- **Thinking**: [Qwen3.5 4B](https://github.com/QwenLM), by Alibaba Cloud's Qwen team — Apache 2.0;
+  [Ollama](https://ollama.com) — MIT.
+- **Answering out loud**: [Piper](https://github.com/OHF-Voice/piper1-gpl), created by Michael Hansen, now maintained
+  by the Open Home Foundation — GPL-3.0 (installed by pip, not shipped in this repository), with espeak-ng (GPL-3.0)
+  and Microsoft's ONNX Runtime (MIT); the French voice `fr_FR-siwis-medium`, trained on the SIWIS database by
+  Pierre-Edouard Honnet, Alexandros Lazaridis, Philip N. Garner and Junichi Yamagishi (University of Edinburgh and
+  Idiap) — CC BY 4.0; the English voice `en_US-lessac-medium`, trained on recordings by Voice Factory and Lessac
+  Technologies (Blizzard Challenge 2013, University of Edinburgh) — non-commercial use; both downloaded from
+  [piper-voices](https://huggingface.co/rhasspy/piper-voices); [FFmpeg](https://ffmpeg.org/), to vary the pitch of
+  the voices, only if it is already on your PC.
+- **And also**: Python (Python Software Foundation), NumPy, and Hugging Face, which hosts the models and voices.
+- **Made with an AI**: the code was written with Claude (Anthropic), in Claude Code, directed by Demonwal51 and tried
+  in game at each step.
+
+**Open source, MIT license** (see `LICENSE`): use, change and share it freely as long as you credit the author. Free
+mod, non-commercial, not affiliated with VOID Interactive or any of the authors above.
