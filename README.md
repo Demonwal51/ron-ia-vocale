@@ -99,14 +99,6 @@ Ouvre une « Issue » sur GitHub, ou écris dans l'onglet Bugs de la page Nexus 
 fichiers `logs\evenements.jsonl` et `pont\WalPont.log` du dossier du mod. Si le jeu a planté : le dossier le plus
 récent de `%LOCALAPPDATA%\ReadyOrNot\Saved\Crashes`.
 
-## On cherche des voix !
-
-Tu fais du doublage, du théâtre, ou tu as simplement une voix qui en jette ? On cherche des doubleurs et doubleuses,
-en français et en anglais, pour donner une vraie voix aux suspects, aux civils et à l'équipe. Avec ton accord, l'IA
-apprend ta voix à partir de quelques enregistrements, et les personnages parlent ensuite avec elle en jeu. Ta voix
-sert uniquement à ce mod, ton nom est crédité ici, et tu peux te retirer quand tu veux. Intéressé ? Écris-moi sur
-Discord (**demonwal51**) ou en message privé sur Nexus.
-
 ## Crédits et outils utilisés
 
 Ce mod tient debout grâce au travail de toutes ces personnes. Merci à elles. Chaque outil garde sa propre licence.
@@ -187,14 +179,6 @@ one PC only; the program's windows are in French.
 
 **Report a problem**: open a GitHub issue, or post in the Bugs tab of the Nexus page (or message demonwal51 on
 Discord), with what you said, what happened, and the files `logs\evenements.jsonl` and `pont\WalPont.log`.
-
-### We're looking for voices!
-
-Do you do voice acting, theatre, or just have a voice that stands out? We're looking for voice actors and actresses,
-in English and French, to give a real voice to the suspects, the civilians and the team. With your permission, the AI
-learns your voice from a few recordings, and the characters then speak with it in game. Your voice is used only for
-this mod, your name is credited here, and you can step out whenever you want. Interested? Message me on Discord
-(**demonwal51**) or privately on Nexus.
 
 ### Credits and tools used
 
